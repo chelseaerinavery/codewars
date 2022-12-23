@@ -1,0 +1,10 @@
+//6 kyu: Replace With Alphabet Position
+
+function alphabetPosition(text) {
+  var result = "";
+  for (var i = 0; i < text.length; i++) {
+    var charCode = text.toLowerCase().charCodeAt(i);
+    if (charCode > 96 && charCode < 123) result += charCode - 96 + " ";
+  }
+  return result.slice(0, result.length - 1);
+}

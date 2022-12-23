@@ -2,7 +2,7 @@
 
 A place to put my (almost) daily katas, and the lessons + victories that they bring.
 
-[**Here is a link to my Codewars profile!**](https://www.codewars.com/users/chelseaerinavery/completed_solutions)
+[**Here is a link to my Codewars profile**](https://www.codewars.com/users/chelseaerinavery/completed_solutions)
 
 ![Morpheus practicing Kung Fu in The Matrix](https://media.giphy.com/media/vEcyRJ5yysqk/giphy.gif)
 
