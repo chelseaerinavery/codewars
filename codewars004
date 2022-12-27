@@ -1,0 +1,11 @@
+//7 kyu: Jaden Casing Strings
+
+function toJadenCase() {
+  var arr = this.toLowerCase().split(" ");
+  var str = "";
+  arr.forEach((c) => {
+    var capitalized = c.charAt(0).toUpperCase() + c.slice(1);
+    str += capitalized + " ";
+  });
+  return str.slice(0, -1);
+}
