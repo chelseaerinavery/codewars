@@ -1,0 +1,20 @@
+//7 kyu: Complementary DNA
+
+function DNAStrand(dna) {
+  var comp = "";
+  for (var i = 0; i < dna.length; i++) {
+    if (dna[i] === "A") {
+      comp += "T";
+    }
+    if (dna[i] === "T") {
+      comp += "A";
+    }
+    if (dna[i] === "G") {
+      comp += "C";
+    }
+    if (dna[i] === "C") {
+      comp += "G";
+    }
+  }
+  return comp;
+}
