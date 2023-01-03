@@ -1,0 +1,36 @@
+//6 kyu: Your order, please
+
+function order(words) {
+  var oldArr = words.split(" ");
+  var newArr = [];
+  for (var i = 0; i < oldArr.length; i++) {
+    if (oldArr[i].includes("1")) {
+      newArr[0] = oldArr[i];
+    }
+    if (oldArr[i].includes("2")) {
+      newArr[1] = oldArr[i];
+    }
+    if (oldArr[i].includes("3")) {
+      newArr[2] = oldArr[i];
+    }
+    if (oldArr[i].includes("4")) {
+      newArr[3] = oldArr[i];
+    }
+    if (oldArr[i].includes("5")) {
+      newArr[4] = oldArr[i];
+    }
+    if (oldArr[i].includes("6")) {
+      newArr[5] = oldArr[i];
+    }
+    if (oldArr[i].includes("7")) {
+      newArr[6] = oldArr[i];
+    }
+    if (oldArr[i].includes("8")) {
+      newArr[7] = oldArr[i];
+    }
+    if (oldArr[i].includes("9")) {
+      newArr[8] = oldArr[i];
+    }
+  }
+  return newArr.join(" ");
+}
