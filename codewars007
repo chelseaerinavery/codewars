@@ -1,7 +1,11 @@
 //7 kyu: Beginner Series #3 Sum of Numbers
 
 function getSum(a, b) {
-  let min = Math.min(a, b),
-    max = Math.max(a, b);
-  return ((max - min + 1) * (min + max)) / 2;
+  var arr = [];
+  let min = Math.min(a, b);
+  let max = Math.max(a, b);
+  for (var i = min; i <= max; i++) {
+    arr.push(i);
+  }
+  return arr.reduce((total, a) => total + a, 0);
 }
