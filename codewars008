@@ -1,0 +1,17 @@
+//6 kyu: Tribonacci Sequence
+
+function tribonacci(signature, n) {
+  if (n < 4) {
+    var myArr = signature.slice(0, n);
+  } else {
+    var myArr = signature;
+  }
+  for (var i = 0; i < n; i++) {
+    var partialSum = 0;
+    if (i >= 3) {
+      partialSum = myArr[i - 1] + myArr[i - 2] + myArr[i - 3];
+      myArr.push(partialSum);
+    }
+  }
+  return myArr;
+}
