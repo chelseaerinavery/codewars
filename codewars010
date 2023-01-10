@@ -1,0 +1,19 @@
+//6 kyu: Highest Scoring Word
+
+function high(x) {
+  var wordArr = x.toLowerCase().split(" ");
+  var result = { word: "", score: 0 };
+  for (var i = 0; i < wordArr.length; i++) {
+    var score = wordArr[i]
+      .split("")
+      .reduce(
+        (t, currentValue, index) => t + (wordArr[i].charCodeAt(index) - 96),
+        0
+      );
+    if (score > result.score) {
+      result.word = wordArr[i];
+      result.score = score;
+    }
+  }
+  return result.word;
+}
