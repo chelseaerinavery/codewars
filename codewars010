@@ -6,10 +6,7 @@ function high(x) {
   for (var i = 0; i < wordArr.length; i++) {
     var score = wordArr[i]
       .split("")
-      .reduce(
-        (t, currentValue, index) => t + (wordArr[i].charCodeAt(index) - 96),
-        0
-      );
+      .reduce((t, c, index) => t + (wordArr[i].charCodeAt(index) - 96), 0);
     if (score > result.score) {
       result.word = wordArr[i];
       result.score = score;

@@ -1,0 +1,13 @@
+//8 kyu: A Needle in the Haystack
+
+//original solution:
+function findNeedle(haystack) {
+  for (var i = 0; i < haystack.length; i++) {
+    if (haystack[i] === "needle") return "found the needle at position " + i;
+  }
+}
+
+//refactored solution:
+function findNeedleAgain(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
