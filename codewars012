@@ -1,0 +1,14 @@
+//6 kyu: Convert string to camel case
+
+function toCamelCase(str) {
+  var arr = str.split("");
+  return arr
+    .map(function (c, i) {
+      if (c == "-" || c == "_") {
+        c = arr[i + 1].toUpperCase();
+        arr.splice(i + 1, 1);
+      }
+      return c;
+    })
+    .join("");
+}

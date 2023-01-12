@@ -8,6 +8,6 @@ function findNeedle(haystack) {
 }
 
 //refactored solution:
-function findNeedleAgain(haystack) {
+function findNeedleFaster(haystack) {
   return "found the needle at position " + haystack.indexOf("needle");
 }
