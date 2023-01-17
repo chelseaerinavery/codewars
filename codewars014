@@ -1,0 +1,11 @@
+//6kyu: Unique In Order
+
+var uniqueInOrder = function (iterable) {
+  var unArr = [];
+  for (var i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== iterable[i - 1]) {
+      unArr.push(iterable[i]);
+    }
+  }
+  return unArr;
+};
