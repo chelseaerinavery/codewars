@@ -1,0 +1,6 @@
+//6kyu:
+
+function narcissistic(value) {
+  var arr = Array.from(String(value), Number);
+  return (solution = arr.reduce((t, c) => t + c ** arr.length, 0) === value);
+}
