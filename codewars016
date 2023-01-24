@@ -1,0 +1,5 @@
+//7kyu: Friend or Foe?
+
+function friend(friends) {
+  return friends.filter((c) => c.length == 4);
+}
