@@ -1,0 +1,17 @@
+//7kyu: Categorize New Member
+
+function openOrSenior(data) {
+    var cat = []
+    for (var i = 0; i < data.length; i++) {
+        for (var j = 0; j < data[i].length - 1; j++) {
+            data[i][j] < 55 || data[i][j + 1] < 8 ? cat.push('Open') : cat.push('Senior')
+        }
+    }
+    return cat
+}
+
+//refactored: 
+
+function openOrSenior(data) {
+    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
