@@ -1,0 +1,10 @@
+//6kyu: Persistent Bugger
+
+function persistence(num) {
+    var count = 0
+    while (num.toString().length > 1) {
+        num = num.toString().split('').reduce((t, c) => t *= c)
+        count++
+    }
+    return count
+}
