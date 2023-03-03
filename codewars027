@@ -1,0 +1,15 @@
+//7kyu: String ends with?
+
+function solution(str, ending) {
+    if (ending === '') {
+        return true
+    } else {
+        return str.slice(-ending.length) === ending
+    }
+}
+
+//Refactored: 
+
+function solutionRefactor(str, ending) {
+    return str.endsWith(ending);
+}
