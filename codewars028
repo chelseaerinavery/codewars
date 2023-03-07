@@ -1,0 +1,10 @@
+//7kyu: Number of People in the Bus
+
+var number = function (busStops) {
+    var count = 0;
+    for (var i = 0; i < busStops.length; i++) {
+        count += busStops[i][0];
+        count -= busStops[i][1];
+    };
+    return (count);
+}
