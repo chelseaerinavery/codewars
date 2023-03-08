@@ -1,0 +1,5 @@
+//7kyu: Odd or Even?
+
+function oddOrEven(array) {
+    return array.reduce((sum, c) => sum + c, 0) % 2 === 0 ? 'even' : 'odd'
+}
