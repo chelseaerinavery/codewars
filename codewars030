@@ -1,0 +1,10 @@
+//6kyu: Sort the odd
+
+function sortArray(array) {
+    var result = Array.apply(null, Array(array.length)).map(function () { })
+    var odds = array.filter((c) => c % 2 !== 0).sort((a, b) => a - b)
+    for (var i = 0; i < array.length; i++) {
+        array[i] % 2 !== 0 ? result[i] = odds.shift() : result[i] = array[i]
+    }
+    return result
+}
