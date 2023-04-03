@@ -1,0 +1,6 @@
+//8kyu: Beginner Series #2 Clock
+
+function past(h, m, s) {
+    let convertedH = h * 3600000, convertedM = m * 60000, convertedS = s * 1000
+    return convertedH + convertedM + convertedS
+}
