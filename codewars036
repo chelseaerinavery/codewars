@@ -1,0 +1,20 @@
+//8kyu: Count of positives / sum of negatives
+
+function countPositivesSumNegatives(input) {
+    if (!input || !input.length) {
+        return []
+    }
+    let count = [0, 0]
+    let negs = []
+    input.forEach((c, i) => {
+        if (c > 0) {
+            count[0]++
+        } else {
+            negs.push(c)
+        }
+    })
+    if (negs.length > 0) {
+        count[1] = negs.reduce((t, c) => t + c)
+    }
+    return count
+}
