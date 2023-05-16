@@ -1,0 +1,5 @@
+//7kyu: Testing 1-2-3
+
+var number = function (array) {
+    return array.length < 1 ? [] : array.map((item, index) => `${index + 1}: ${item}`)
+}
