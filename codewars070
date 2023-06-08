@@ -1,0 +1,9 @@
+//7kyu: Round up to the next multiple of 5
+
+function roundToNext5(n) {
+    let nextNumber = n
+    while (nextNumber % 5 !== 0) {
+        nextNumber++
+    }
+    return nextNumber
+}
