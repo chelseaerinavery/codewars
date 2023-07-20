@@ -1,0 +1,12 @@
+//7kyu: Maximum Multiple
+
+function maxMultiple(divisor, bound) {
+    let divisors = []
+    for (let i = 1; i <= bound; i++) {
+        if (i % divisor === 0) {
+            divisors.push(i)
+        }
+    }
+    let result = divisors.slice(-1)
+    return result[0]
+}
