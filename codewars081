@@ -1,0 +1,14 @@
+//7kyu: Fix string case
+
+function solve(s) {
+    let upperCount = 0
+    let lowerCount = 0
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === s[i].toUpperCase()) {
+            upperCount++
+        } else {
+            lowerCount++
+        }
+    }
+    return upperCount > lowerCount ? s.toUpperCase() : s.toLowerCase()
+}
