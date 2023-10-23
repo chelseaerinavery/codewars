@@ -1,0 +1,7 @@
+//7kyu: Form The Minimum
+
+function minValue(values) {
+    let sortedValues = new Set(values.sort((a, b) => a - b))
+    let newArr = Array.from(sortedValues)
+    return Number(newArr.join("").concat())
+}
