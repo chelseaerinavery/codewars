@@ -1,0 +1,7 @@
+//8kyu - Sentence Smash
+
+//warm-up
+
+smash = function (words) {
+    return words.join(" ");
+};
