@@ -1,0 +1,14 @@
+//7kyu - Sum of Minimums!
+
+function sumOfMinimums(arr) {
+    let mins = []
+    arr.forEach((childArr) => {
+        childArr.sort(function (a, b) {
+            return a - b;
+        })
+    })
+    for (let i = 0; i < arr.length; i++) {
+        mins.push(arr[i][0])
+    }
+    return mins.reduce((a, b) => a + b)
+}
