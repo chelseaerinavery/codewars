@@ -1,0 +1,5 @@
+//7kyu Ones and Zeros
+
+//I've begun to re-train on some katas so there may be repeats in this repo :)
+
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
